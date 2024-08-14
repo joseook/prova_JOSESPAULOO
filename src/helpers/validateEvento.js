@@ -1,9 +1,9 @@
 import validator from "validator";
 
-export const validateParticipante = (req, res, next) => {
-    const { nome, email, telefone, imagem, cpf } = req.body;
+export const validateEvento = (req, res, next) => {
+    const { titulo, data, descricao_evento, categoria, rede_social, email } = req.body;
 
-    if (!nome || !email || !telefone || !imagem || !cpf) {
+    if (!titulo || !data || !descricao_evento || !categoria || !rede_social || !email) {
         return res.status(400).json({ message: "Todos os campos são obrigatórios!" });
     }
 

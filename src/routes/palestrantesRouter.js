@@ -1,10 +1,10 @@
 import { Router } from "express";
 import { createPalestrante, getPalestrantes } from "../controllers/palestrantesController.js";
-import { validateParticipante } from "../helpers/validateParticipante.js";
+import { validatePalestrante } from "../helpers/validatePalestrante.js";
 
 export const router = Router();
 
-router.post("/palestrantes", validateParticipante, createPalestrante);
+router.post("/palestrantes", validatePalestrante, createPalestrante);
 router.get("/palestrantes", getPalestrantes);
 
 
