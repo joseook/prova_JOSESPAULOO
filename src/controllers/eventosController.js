@@ -41,7 +41,7 @@ export const getEventos = (req, res) => {
     });
 };
 
-// NÃO FUNCIONA A AGENDA!
+// NÃO FUNCIONA A AGENDA, EU TENTEI COM AUXILIO DE CODIGOS DA API DO ONIBUS, MAS INFELIZMENTE FALTOU CONHECIMENTO. DESCULPE DECEPCIONA-LO.
 
 export const getAgendaEventos = (req, res) => {
     const query = `
