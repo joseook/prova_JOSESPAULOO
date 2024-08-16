@@ -17,5 +17,5 @@ create table if not exists palestrantes (
 
 mysqlPool.query(tablePalestrante, (err) => {
     if (err) throw err;
-    console.log("Tabela palestrantes criada!");
+    console.log("Tabela Palestrantes criada!");
 });

@@ -1,6 +1,6 @@
 import mysqlPool from "../config/mysqlConnect.js";
 
-export const tableEventos =  
+const tableEventos =  
     `CREATE TABLE IF NOT EXISTS eventos (
     id VARCHAR(60) PRIMARY KEY,
     titulo VARCHAR(255) NOT NULL,
@@ -17,7 +17,7 @@ export const tableEventos =
 );
 `
 
-export const tableEventosPalestrantes = 
+const tableEventosPalestrantes = 
     `CREATE TABLE IF NOT EXISTS eventos_palestrantes (
     eventoId VARCHAR(60),
     palestranteId VARCHAR(60),
@@ -35,5 +35,5 @@ mysqlPool.query(tableEventos, (err) => {
 
 mysqlPool.query(tableEventosPalestrantes, (err) => {
     if (err) throw err;
-    console.log("Tabela eventos_palestrantes criada!");
+    console.log("Tabela Eventos para Palestrantes criada!");
 });

@@ -1,4 +1,4 @@
-// middleware/authMiddleware.js
+
 import jwt from "jsonwebtoken";
 import { JWT_SECRET } from "../config/jwConfig.js";
 

@@ -30,5 +30,5 @@ mysqlPool.query(tableUsers, (err) => {
 
 mysqlPool.query(tableEventosParticipantes, (err) => {
     if (err) throw err;
-    console.log("Tabela eventos pra usuarios criada!");
+    console.log("Tabela Eventos pra Usuarios criada!");
 });
